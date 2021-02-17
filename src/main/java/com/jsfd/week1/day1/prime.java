@@ -1,0 +1,24 @@
+package com.jsfd.week1.day1;
+
+import java.util.*;
+class prime
+{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0;
+        for(int i=1;i<=n;i++){
+            if(n%i==0){
+                count+=1;
+            }
+        }
+        if(count>2){
+            System.out.println(n + " is Not Prime Number");
+        }
+        else{
+            System.out.println(n + " is Prime Number");
+        }
+        sc.close();
+    }
+
+}
