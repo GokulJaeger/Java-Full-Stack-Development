@@ -1,6 +1,6 @@
 package com.jsfd.week1.day2;
-import java.lang.ref.Cleaner;
-import java.math.*;
+// import java.lang.ref.Cleaner;
+// import java.math.*;
 
 public class car{
     private String owner;
@@ -82,12 +82,13 @@ public class car{
     public void applyAcceleration(Boolean isAcclApplied) {
         int a=this.speed;
         int b= (a*5)/18;
+        b=b/3;
         //System.out.println(this.speed);
-        System.out.println(b);
+        // System.out.println(b);
 		if (isAcclApplied) {
             System.out.println("...The car is running...");
             for(int i=0; i<=this.speed;i++){
-                if(i%b==0 || i%17==0){
+                if(i%b==0){
                     System.out.println("The car is moving at a speed of "+i+"mps");
                     this.ct=i;
                 }
@@ -105,12 +106,13 @@ public class car{
     public void applyBrake(Boolean isBrakeApplied) {
         int a=this.speed;
         int b=(a*5)/18;
+        b=b/3;
         int count=0;
-        System.out.println(this.ct);
+        // System.out.println(this.ct);
 		if (isBrakeApplied) {
             System.out.println("The car is slowing down!");
             for(int i=this.ct;i>=0;i--){
-                if(i%b==0 || i%17==0){
+                if(i%b==0){
                 System.out.println("The car is slowing down at a speed of "+i+"mps");
                 count+=1;
                 }
@@ -123,7 +125,7 @@ public class car{
 	} 
 
     public String disp(){
-        return this.owner+" has "+this.name+" "+this.model+" model which is made in "+this.year+", which has a top speed of "+this.speed+"Kmph. It gives a milleage of "+this.mil+"kmpl. The car holds  "+this.tank+"l of tank capacity";
+        return "Owner: "+this.owner+"\nCar Name: "+this.name+" ("+this.model+")\nYear: "+this.year+"\nTop Speed: "+this.speed+"Kmph \nMilleage: "+this.mil+"kmpl \nTank capacity: "+this.tank+"l \n";
     }
 
 }
