@@ -10,7 +10,8 @@ class Customer {
         
         arraylist.add(new CustomerData("Deku", "Midoria", "deku@gmail.com", 21)); 
         arraylist.add(new CustomerData("Murderer", "Kachan", "Muderer@gmail.com", 22)); 
-        arraylist.add(new CustomerData("Hot & Cold", "Shoto", "Shoto@gmail.com", 23)); 
+        arraylist.add(new CustomerData("Hot & Cold", "Shoto", "Shoto@gmail.com", 23));
+        arraylist.add(new CustomerData("Engine", "Tenya", "Engine@gmail.com", 24)); 
 
         System.out.println("\nCustomer Data!");
         System.out.println("---------------------------------------------------------------------------------------------\n");

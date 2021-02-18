@@ -49,26 +49,26 @@ public class CustomerData {
     @Override 
     public String toString() 
     { 
-        return "[ First Name=" + this.fname + ",        Late Name="
-            + this.lname +",        Email=" + this.email + ",        Age=" + this.age + "]"; 
+        return "[ First Name=" + this.fname + ",\tLate Name="
+            + this.lname +",\tEmail=" + this.email + ",\tAge=" + this.age + " ]"; 
     }
 
     public static Comparator<CustomerData> fnameComparator = new Comparator<CustomerData>() { 
         
-        public int compare(CustomerData s1, CustomerData s2){ 
+        public int compare(CustomerData cd1, CustomerData cd2){ 
   
-                  String Customer1 = s1.getFname().toUpperCase(); 
-                  String Customer2 = s2.getFname().toUpperCase(); 
+                  String Customer1 = cd1.getFname().toUpperCase(); 
+                  String Customer2 = cd2.getFname().toUpperCase(); 
 
                   return Customer2.compareTo(Customer1); 
               } 
           };
 
     public static Comparator<CustomerData> CustomerAge = new Comparator<CustomerData>() { 
-        public int compare(CustomerData c1, CustomerData c2){ 
+        public int compare(CustomerData cd1, CustomerData cd2){ 
   
-                  int age1 = c1.getAge(); 
-                  int age2 = c2.getAge(); 
+                  int age1 = cd1.getAge(); 
+                  int age2 = cd2.getAge(); 
    
                   return age2-age1; 
               } 
