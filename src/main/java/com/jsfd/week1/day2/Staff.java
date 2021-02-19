@@ -30,7 +30,7 @@ public class Staff {
 
         Student st = new Student();
         st.getdata();
-        st.getmarks();
+        // st.getmarks();
         String str;
         str = st.putdata();
         System.out.println(str);
