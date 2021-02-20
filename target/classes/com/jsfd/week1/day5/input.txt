@@ -1,0 +1,4 @@
+Customer_ID:101	Customer_Name:Gokul customer_address:Vellore
+Customer_ID:103 Customer_Name:Sweatha customer_address:Vellore
+Customer_ID:102 Customer_Name:Sachin customer_address:Chennai
+Customer_ID:104 Customer_Name:Pavithara customer_address:Vellore 

@@ -9,7 +9,7 @@ interface PutDetails {
 
 interface GetDetails{
     void getdata();
-    void getmarks();
+    void getmarks(int a[], int b[]);
 }
 
 public class Student implements PutDetails, GetDetails{
@@ -19,7 +19,7 @@ public class Student implements PutDetails, GetDetails{
     private String dept;
     private String year;
     private int no;
-    private float mark[];
+    private int mark[];
     private int credit[];
     private float avg = 0.0f;
     private float total = 0.0f;
@@ -27,7 +27,7 @@ public class Student implements PutDetails, GetDetails{
     private float ct = 0.0f;
     private float gpa = 0.0f;
 
-    @Override
+    //@Override
     public void getdata() {
         Scanner se = new Scanner(System.in);
         System.out.println("Enter Student Id:");
@@ -41,32 +41,14 @@ public class Student implements PutDetails, GetDetails{
         se.close();
     }
 
-    @Override
-    public void getmarks() {
-        Scanner sa = new Scanner(System.in);
-        System.out.println("Enter the total number of Subjects:");
-        this.no = sa.nextInt();
-        sa.close();
-        this.mark = new float[this.no];
-        
-        Scanner sb = new Scanner(System.in);
-        System.out.println("Enter the Marks: ");
-        for(int i=0; i<this.no; i++){
-            this.mark[i] = sb.nextFloat();
-        }
-        sb.close();
-        this.credit = new int[this.no];
-        
-        Scanner sx = new Scanner(System.in);
-        System.out.println("Enter the Marks: ");
-        for(int i=0; i<this.no; i++){
-            this.credit[i] = sx.nextInt();
-        }
-        sx.close();
+    //@Override
+    public void getmarks(int mar[], int crd[]) {
+        this.mark = mar;
+        this.credit = crd;
 
     }
 
-    @Override
+    //@Override
     public String putdata() {
 
         return "[ Name: "+this.name+"\tID: "+this.id+"\tDepartment: "+this.dept+"\tYear: "+this.year+" ]";
@@ -74,19 +56,19 @@ public class Student implements PutDetails, GetDetails{
 
     }
 
-    @Override
+    //@Override
     public void putmarks() {
         
-        for(int i=0; i<this.no; i++){
+        for(int i=0; i<this.mark.length; i++){
             this.avg+=this.mark[i];
         }
-        for(int i=0; i<this.no; i++){
+        for(int i=0; i<this.mark.length; i++){
             this.total+=this.mark[i];
         }
-        for(int i=0; i<this.no; i++){
+        for(int i=0; i<this.credit.length; i++){
             this.ct+=this.credit[i];
         }
-        for(int i=0; i<this.no; i++){
+        for(int i=0; i<this.mark.length; i++){
             this.gt+=(this.mark[i]*this.credit[i]);
         }
         this.gpa=(this.gt/this.ct);
@@ -95,13 +77,13 @@ public class Student implements PutDetails, GetDetails{
 
     }
 
-    public String getId() {
-        return this.id;
-    }
+    // public String getId() {
+    //     return this.id;
+    // }
 
-    public String getName() {
-        return this.name;
-    }
+    // public String getName() {
+    //     return this.name;
+    // }
     
 
 }
