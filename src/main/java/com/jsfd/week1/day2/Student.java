@@ -8,7 +8,7 @@ interface PutDetails {
 }
 
 interface GetDetails{
-    void getdata();
+    void getdata(String id, String name, String dept, String year);
     void getmarks(int a[], int b[]);
 }
 
@@ -28,17 +28,21 @@ public class Student implements PutDetails, GetDetails{
     private float gpa = 0.0f;
 
     //@Override
-    public void getdata() {
-        Scanner se = new Scanner(System.in);
-        System.out.println("Enter Student Id:");
-        this.id = se.nextLine(); 
-        System.out.println("Enter Student Name:");
-        this.name = se.nextLine();
-        System.out.println("Enter Student Department:");
-        this.dept = se.nextLine();
-        System.out.println("Enter Student Year:");
-        this.year = se.nextLine();
-        se.close();
+    public void getdata(String id, String name, String dept, String year) {
+        // Scanner se = new Scanner(System.in);
+        // System.out.println("Enter Student Id:");
+        // this.id = se.nextLine(); 
+        // System.out.println("Enter Student Name:");
+        // this.name = se.nextLine();
+        // System.out.println("Enter Student Department:");
+        // this.dept = se.nextLine();
+        // System.out.println("Enter Student Year:");
+        // this.year = se.nextLine();
+        // se.close();
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
+        this.year = year;
     }
 
     //@Override
