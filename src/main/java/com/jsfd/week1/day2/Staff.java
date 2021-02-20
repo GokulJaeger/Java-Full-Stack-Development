@@ -2,8 +2,6 @@ package com.jsfd.week1.day2;
 
 import java.util.Scanner;
 
-import org.springframework.util.SystemPropertyUtils;
-
 public class Staff {
     public static void main(String[] args) {
         int n;

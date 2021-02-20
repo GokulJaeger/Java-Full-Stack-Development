@@ -3,7 +3,6 @@ package com.jsfd.week1.day5;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 
 public class HashcodeFile {
     public static void main(String[] args) {
