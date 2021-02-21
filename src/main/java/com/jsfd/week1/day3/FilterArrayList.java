@@ -28,7 +28,7 @@ public class FilterArrayList {
         sc.close();
         se.close();
         if(ch==1){
-            for(int i=0;i<lst.size();i++){
+            for(int i=0;i<lst.size(); i++){
                 String str2=lst.get(i);
                 if(str.equalsIgnoreCase(str2)){
                     System.out.println("String already present in the list...");
@@ -42,7 +42,7 @@ public class FilterArrayList {
             }
         }
         else if(ch==2){
-            for(int i=0;i<lst.size();i++){
+            for(int i=0;i<lst.size(); i++) {
                 String str2=lst.get(i);
                 if(str.equalsIgnoreCase(str2)){
                     lst.remove(str);

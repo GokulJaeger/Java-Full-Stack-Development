@@ -2,7 +2,7 @@ package com.jsfd.week1.day2;
 // import java.lang.ref.Cleaner;
 // import java.math.*;
 
-public class car{
+public class car extends CarPerformance implements External, Internal{
     private String owner;
     private String name;
     private String model;
@@ -10,7 +10,15 @@ public class car{
     private int speed;
     private int mil;
     private int tank;
-    private int ct=0;
+    private int ct;
+    private int ab;
+    private Boolean da;
+    private int speakers;
+    private int bs;
+    private Boolean dsa;
+    private Boolean abs;
+    private Boolean sunf;
+    private Boolean spoiler;
 
 
     public car(String owner, String name, String model, int year, int speed, int mil, int tank) {
@@ -124,8 +132,31 @@ public class car{
 		}
 	} 
 
-    public String disp(){
-        return "Owner: "+this.owner+"\nCar Name: "+this.name+" ("+this.model+")\nYear: "+this.year+"\nTop Speed: "+this.speed+"Kmph \nMilleage: "+this.mil+"kmpl \nTank capacity: "+this.tank+"l \n";
+    @Override
+    public void getIFeatures(int ab, Boolean da, int speaker, int bs, Boolean dsa) { 
+        this.ab = ab;
+        this.da = da;
+        this.speakers = speaker;
+        this.bs = bs;
+        this.dsa = dsa;
     }
 
+    @Override
+	public void getEFeatures(Boolean abs, Boolean sunf, Boolean spoiler) {
+		this.abs = abs;
+        this.sunf = sunf;
+        this.spoiler = spoiler;
+		
+	}
+
+    public String disp(){
+
+        return "\nCar Details:\nOwner: "+this.owner+"\nCar Name: "+this.name+" ("+this.model+")\nYear: "+this.year+"\nTop Speed: "+this.speed+"Kmph \nMilleage: "+this.mil+"kmpl \nTank capacity: "+this.tank+"l";
+    }
+
+    public void spec(){
+        System.out.println("\nCar Specifications:\nCC=" + super.cc + "\nHorsePower=" + super.hp + "\nTorque=" + super.torque);
+        System.out.println("\nAirBags: "+this.ab+"\nDriving Assist: "+this.da+"\nSpeakers: "+this.speakers+"\nBootSpace: "+this.bs+"\nAdjustable Driver Seat: "+this.dsa);
+        System.out.println("\nAnti-Lock Breaking: "+this.abs+"\nSunRoof: "+this.sunf+"\nSpoilers: "+this.spoiler);
+    }
 }
