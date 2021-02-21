@@ -72,6 +72,7 @@ class Automobile{
                     //     continue;
                     // }
                 }
+                sc.close();
                 Scanner cn = new Scanner(System.in);
                 System.out.println("\nWant Continue?:");
                 String con = cn.nextLine();
@@ -85,6 +86,6 @@ class Automobile{
             {
                 break;
             }
-        }  
+        }
     }
 }
