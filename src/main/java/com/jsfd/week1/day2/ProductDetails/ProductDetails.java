@@ -2,7 +2,7 @@ package com.jsfd.week1.day2.ProductDetails;
 
 import java.util.Date;
 
-public class ProductDetails {
+public class ProductDetails  {
     private int pid;
     private String name;
     private int qty;
@@ -20,4 +20,10 @@ public class ProductDetails {
         this.type = type;
         this.odate = odate;
     }
+
+    public void showProduct(){
+        System.out.println("ProductDetails:\n------------------------------------------\nUser Name = " + this.name + "\nOrder_Date = " + this.odate + "\nProduct _Id = " + this.pid + "\nPhone_Number = " + this.pnum + "\nProduct = "
+        + this.prod + "\nQuantity = " + this.qty + "\nProduct_Type = " + this.type);
+    }
+
 }
