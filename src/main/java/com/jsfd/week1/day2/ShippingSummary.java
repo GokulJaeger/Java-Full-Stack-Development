@@ -46,8 +46,6 @@ public class ShippingSummary {
             else{
                 break;
             }
-        }
-
-        
+        }       
     }
 }

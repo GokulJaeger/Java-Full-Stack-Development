@@ -1,0 +1,189 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Week1Application",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.Week1Application",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch checkoddlist",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.checkoddlist",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch fact",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.fact",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch fibo",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.fibo",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch findvowl",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.findvowl",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch prime",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.prime",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch revstring",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.revstring",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch rmwhitesp",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.rmwhitesp",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch seclarge",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.seclarge",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch swap",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day1.swap",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Automobile",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day2.Automobile",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RBUser",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day2.RetailBank.RBUser",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShippingSummary",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day2.ShippingSummary",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Customer",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.Customer",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FilterArrayList",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.FilterArrayList",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMapSort",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.HashMapSort",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedlistConversion",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.LinkedlistConversion",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch OddList",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.OddList",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseArray",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.ReverseArray",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseArrayList",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.ReverseArrayList",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreMap",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day3.TreMap",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericSort",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day4.GenericSort",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Idcard",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day4.Idcard",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashcodeFile",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day5.HashcodeFile",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RWFile",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day5.RWFile",
+            "projectName": "week1"
+        }
+    ]
+}

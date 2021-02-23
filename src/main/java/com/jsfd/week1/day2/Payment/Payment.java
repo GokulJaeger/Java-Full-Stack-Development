@@ -78,7 +78,6 @@ public class Payment implements PaymentDetails {
 
     @Override
     public void getCardDetails(String card_no, int cvv, String user, int month, int year, int otp, String paccount) {
-        // TODO Auto-generated method stub
 
     }
     
