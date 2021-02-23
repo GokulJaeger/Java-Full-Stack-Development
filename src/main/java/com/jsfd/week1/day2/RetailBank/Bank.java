@@ -12,11 +12,12 @@ public class Bank implements DDInterface {
         this.bndd = ndd;
         this.bacbal = acbal;
         if(this.bacbal<this.bdamt){
-            // System.out.println("Accoutn Balance is Low!...");
+            System.out.println("Accoutn Balance is Low!...");
             this.totec = 0.0f;
         }
         else{
             this.totec = (this.bdamt*exchange)*this.bndd;
+            this.totec+= this.bdamt;
         }
         return this.totec;
     }
