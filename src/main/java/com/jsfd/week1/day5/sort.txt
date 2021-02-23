@@ -1,0 +1,10 @@
+Alba     Walk     20mins
+Alba     Walk     20mins
+Amy      Jogging  40mins
+Bobby    Run      10mins
+Bobby    Run      10mins
+Christy  Jogging  40mins
+Jessica  Run      20mins
+Mess     Run      20mins
+Monday
+Tuesday
