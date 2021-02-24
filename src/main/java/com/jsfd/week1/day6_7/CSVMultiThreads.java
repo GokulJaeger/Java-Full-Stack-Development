@@ -30,7 +30,6 @@ public class CSVMultiThreads {
   }
 
   public static void main(String[] args) {
-    //csv file to read
     String csvfile = "D:/JFSD/week1/src/main/java/com/jsfd/week1/day6_7/Books.csv";
     CSVMultiThreads.read(csvfile);
   }
