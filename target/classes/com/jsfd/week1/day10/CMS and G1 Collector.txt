@@ -1,0 +1,23 @@
+The Garbage-First (G1) garbage collector is a server-style garbage collector, targeted for multiprocessor machines with large memories. It attempts to meet garbage collection (GC) pause time goals with high probability while achieving high throughput. Whole-heap operations, such as global marking, are performed concurrently with the application threads. This prevents interruptions proportional to heap or live-data size.
+
+The G1 collector achieves high performance and pause time goals through several techniques.
+
+The heap is partitioned into a set of equally sized heap regions, each a contiguous range of virtual memory. G1 performs a concurrent global marking phase to determine the liveness of objects throughout the heap. After the marking phase completes, G1 knows which regions are mostly empty. It collects these regions first, which often yields a large amount of free space. This is why this method of garbage collection is called Garbage-First. As the name suggests, G1 concentrates its collection and compaction activity on the areas of the heap that are likely to be full of reclaimable objects, that is, garbage. G1 uses a pause prediction model to meet a user-defined pause time target and selects the number of regions to collect based on the specified pause time target.
+
+G1 copies objects from one or more regions of the heap to a single region on the heap, and in the process both compacts and frees up memory. This evacuation is performed in parallel on multiprocessors to decrease pause times and increase throughput. Thus, with each garbage collection, G1 continuously works to reduce fragmentation. This is beyond the capability of both of the previous methods. CMS (Concurrent Mark Sweep) garbage collection does not do compaction. Parallel compaction performs only whole-heap compaction, which results in considerable pause times.
+
+It is important to note that G1 is not a real-time collector. It meets the set pause time target with high probability but not absolute certainty. Based on data from previous collections, G1 estimates how many regions can be collected within the target time. Thus, the collector has a reasonably accurate model of the cost of collecting the regions, and it uses this model to determine which and how many regions to collect while staying within the pause time target.
+
+The first focus of G1 is to provide a solution for users running applications that require large heaps with limited GC latency. This means heap sizes of around 6 GB or larger, and a stable and predictable pause time below 0.5 seconds.
+
+Applications running today with either the CMS or the with parallel compaction would benefit from switching to G1 if the application has one or more of the following traits.
+
+More than 50% of the Java heap is occupied with live data.
+
+The rate of object allocation rate or promotion varies significantly.
+
+The application is experiencing undesired long garbage collection or compaction pauses (longer than 0.5 to 1 second).
+
+G1 is planned as the long-term replacement for the Concurrent Mark-Sweep Collector (CMS). Comparing G1 with CMS reveals differences that make G1 a better solution. One difference is that G1 is a compacting collector. Also, G1 offers more predictable garbage collection pauses than the CMS collector, and allows users to specify desired pause targets.
+
+As with CMS, G1 is designed for applications that require shorter GC pauses.
