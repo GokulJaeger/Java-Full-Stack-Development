@@ -1,12 +1,19 @@
-package com.jsfd.week1.day8;
+package com.jsfd.week1.day6_7;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class EmpDBMS {
+
+public class EmpDBMS extends Thread{
    public static void main(String[] args) {
+      Thread thread = new Thread();
+      thread.start();
+      System.out.println("current running thread: "+Thread.currentThread().getName());
+   }
+
+   public void run(){
       Connection conn = null;
       Statement stmt = null;
       try {

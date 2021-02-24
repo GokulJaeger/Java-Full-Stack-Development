@@ -1,5 +1,8 @@
-package com.jsfd.week1.day9;
+package com.jsfd.week1.day8;
+
 import static java.lang.String.format;
+
+import com.jsfd.week1.day9.TextConverter;
 
 
 public class LambdaExpressions {
@@ -9,7 +12,7 @@ public class LambdaExpressions {
     String result = text;
     for (TextConverter converter : converters) {
       result = converter.convert(result);
-      System.out.println(format("Applied converter [%s] and got [%s]", converter.getClass().getName(), result));
+      // System.out.println(format("Applied converter [%s] and got [%s]", converter.getClass().getName(), result));
     }
     System.out.println(result);
     System.out.println();
