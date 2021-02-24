@@ -1,10 +1,6 @@
-Monday
-Jessica  Run      20mins
-Alba     Walk     20mins
-Amy      Jogging  40mins
-Bobby    Run      10mins
-Tuesday
-Mess     Run      20mins
-Alba     Walk     20mins
-Christy  Jogging  40mins
-Bobby    Run      10mins
+
+_order_ID	_order_Name	_order_Amount	_order_Location
+O54796		gokul		5,581		vellore
+O98754		sachin		3,547		vellore
+O78452		sweatha		7,542		coimbatore
+O34578		pavithara	4,789		chennai
