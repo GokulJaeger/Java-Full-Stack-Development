@@ -1,4 +1,4 @@
-package com.jsfd.week1.Exercises;
+package com.jsfd.week1.Exercise1;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
