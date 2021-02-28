@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EmpDBMS",
+            "request": "launch",
+            "mainClass": "com.jsfd.week1.day6_7.EmpDBMS",
+            "projectName": "week1"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

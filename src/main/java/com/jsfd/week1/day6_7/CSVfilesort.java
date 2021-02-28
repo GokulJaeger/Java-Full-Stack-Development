@@ -1,5 +1,5 @@
 package com.jsfd.week1.day6_7;
-import java.io. * ;
+// import java.io. * ;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class CSVMultiThreads {
+public class CSVfilesort {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new FileReader("D:/JFSD/week1/src/main/java/com/jsfd/week1/day6_7/List.csv"));
         Map<String, List<String>> map = new TreeMap<String, List<String>>();
