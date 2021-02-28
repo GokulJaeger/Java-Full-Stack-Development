@@ -73,8 +73,7 @@ class Min_Heap {
     public void display()  { 
         System.out.println("PARENT NODE" + "\t" + "LEFT NODE" + "\t" + "RIGHT NODE");
         for (int i = 1; i <= size / 2; i++) { 
-            System.out.print(" " + HeapArray[i] + "\t\t" + HeapArray[2 * i] 
-                             + "\t\t" + HeapArray[2 * i + 1]); 
+            System.out.print(" " + HeapArray[i] + "\t\t" + HeapArray[2 * i] + "\t\t" + HeapArray[2 * i + 1]); 
             System.out.println(); 
         } 
     } 
