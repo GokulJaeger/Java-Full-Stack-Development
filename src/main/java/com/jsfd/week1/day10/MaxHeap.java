@@ -6,7 +6,7 @@ public class MaxHeap {
     public static void main(String args[]) {
         ArrayList<Integer> array = new ArrayList<Integer>();
         int size = array.size();
-        Heap h = new Heap();
+        Max_Heap h = new Max_Heap();
         h.insert(array, 3);
         h.insert(array, 4);
         h.insert(array, 9);

@@ -10,8 +10,7 @@ public class MinHeap {
         minHeap.insert(40); 
         minHeap.insert(50); 
         minHeap.insert(90); 
-        minHeap.insert(45); 
-        
+        minHeap.insert(45);
         minHeap.minHeap(); 
         minHeap.display(); 
         System.out.println("The Min val(root node):" + minHeap.remove()); 

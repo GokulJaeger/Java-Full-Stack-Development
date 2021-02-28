@@ -1,6 +1,6 @@
 package com.jsfd.week1.day10;
 import java.util.ArrayList;
-class Heap {
+class Max_Heap {
     void heapify(ArrayList<Integer> hT, int i) {
       int size = hT.size();
       int largest = i;
